@@ -20,3 +20,10 @@ Shadcn for UI components
 PlanetScale for online database
 Prisma ORM
 Uploadthing.com for uploading images
+
+
+To make changes in db schema
+
+npx prisma generate 
+npx prisma db push
+npx prisma studio
