@@ -48,7 +48,7 @@ const formSchema = z.object({
   type: z.nativeEnum(ChannelType),
 });
 
-export const CreateChannelName = () => {
+export const CreateChannelModal = () => {
   const { isOpen, onClose, type } = useModal();
   const router = useRouter();
   const params = useParams();
@@ -64,12 +64,6 @@ export const CreateChannelName = () => {
   const isLoading = form.formState.isSubmitting;
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
-    // const url = qs.stringifyUrl({
-    //   url: "/api/channels",
-    //   query: {
-    //     serverId: params?.serverId,
-    //   },
-    // });
     try {
       await axios({
         method: "POST",
