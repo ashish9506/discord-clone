@@ -27,3 +27,9 @@ To make changes in db schema
 npx prisma generate 
 npx prisma db push
 npx prisma studio
+
+
+bugs
+
+Delete Channel
+MobileToggle
