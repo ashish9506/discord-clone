@@ -70,7 +70,7 @@ export const CreateChannelModal = () => {
     } else {
       form.setValue("type", ChannelType.TEXT);
     }
-  });
+  }, [channelType, form]);
   const isLoading = form.formState.isSubmitting;
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
